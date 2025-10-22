@@ -35,7 +35,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Breakfast</li>
         <li>Pool Access</li>
       </ul>
-      <button>boking Room</button>
+<button onclick="location.href='#booking-form'">booking Room</button>
     </div>
     <div class="room">
       <h3>Standard Room</h3>
@@ -44,7 +44,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Free Wi-Fi</li>
         <li>Breakfast</li>
       </ul>
-      <button>booking Room</button>
+<button onclick="location.href='#booking-form'">booking Room</button>
     </div>
      <div class="room">
       <h3>Low standard room</h3>
@@ -54,7 +54,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Breakfast</li>
         <li>Pool Access</li>
       </ul>
-      <button>boking Room</button>
+<button onclick="location.href='#booking-form'">booking Room</button>
     </div>
      <div class="room">
       <h3>Deluxe Room</h3>
@@ -69,7 +69,8 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>24h Electriccity</li>
         <li>Pool Access</li>
       </ul>
-      <button>boking Room</button>
+<button onclick="location.href='#booking-form'">booking Room</button>
+
     </div>
     <div class="room">
       <h3>Standard Room</h3>
@@ -81,7 +82,8 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Denar</li>
         <li>Tea</li>
       </ul>
-      <button>booking Room</button>
+<button onclick="location.href='#booking-form'">booking Room</button>
+
     </div>
      <div class="room">
       <h3>Low standard room</h3>
@@ -93,22 +95,33 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Denaer</li>
         <li>Pool Access</li>
       </ul>
-      <button>boking Room</button>
+<button onclick="location.href='#booking-form'">booking Room</button>
     </div>
-  </section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
 
-   <section id="contact">
-    <div class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    </div>
-  </section>
-<!-- Hyderabad Location Section -->
+    <select id="room-category" required>
+      <option value="">Select Room</option>
+      <option value="Deluxe Room">Deluxe Room</option>
+      <option value="Standard Room">Standard Room</option>
+      <option value="Low Standard Room">Low Standard Room</option>
+    </select>
+
+    <select id="booking-type" required>
+      <option value="">Select Booking Type</option>
+      <option value="Night">Night</option>
+      <option value="Week">Week</option>
+    </select>
+
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Booking</button>
+  </form>
+</section>
+
+
 <section id="location">
   <h2 class="h2">guest house Location  Hyderabad</h2>
   <iframe
@@ -121,10 +134,10 @@ Welcome to our guest house — your home away from home. We offer a range of roo
     referrerpolicy="no-referrer-when-downgrade">
   </iframe>
 </section>
-
   <footer>
     <p>&copy; 2025 Guest House. All rights reserved.</p>
     <p>Email: contact@guesthouse.com | Phone: +92-300-1234567</p>
   </footer>
 </body>
 </html>
+

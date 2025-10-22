@@ -64,8 +64,8 @@ button:hover {
   width: 100%;
 }
 form{
-  background-color: #a5f495;
-  color: rgb(134, 240, 112);
+  background-color: #819cc6;
+  color: rgb(94, 173, 185);
 }
 
 footer {
@@ -84,7 +84,7 @@ footer {
   color: #fb0303;
 }
 body {
-  background-image: url('j.jpg');
+  background-image: url('back3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

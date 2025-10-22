@@ -1,41 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hotal</title>
-    <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueSky Guest House</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(180deg, #f5f7fa 0%, #e6ecf5 100%);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+
+    .rooms {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 0 15px;
+    }
+
+    .room-card {
+      position: relative;
+      height: 320px;
+      border-radius: 16px;
+      overflow: hidden;
+      color: #fff;
+      background-color: #777;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .room-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      transition: background 0.3s;
+    }
+
+    .room-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .room-card:hover::before {
+      background: rgba(0,0,0,0.3);
+    }
+
+    .room-info {
+      position: relative;
+      z-index: 2;
+      padding: 18px;
+      width: 100%;
+    }
+
+    .room-info h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .room-info button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .room-info button:hover {
+      background: #1e40af;
+    }
+
+    .contact {
+      max-width: 600px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #1f2937;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input[readonly] {
+      background: #f3f4f8;
+    }
+
+    button.submit {
+      width: 100%;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button.submit:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <Header>
-    <nav>
-      <a href="#home"></a>
-      <a href="#about">about</a>
-      <a href="#contact"></a>
-    </nav>
-  </Header>
+  <header>
+    <h1>BlueSky Guest House</h1>
+    <p>Select your preferred room and contact us to book</p>
+  </header>
+
   <section class="rooms">
-    <h2>Room Details</h2>
-    <div class="room">
-      <h3>Deluxe Room</h3>
-      <p>Price: $120 per night</p>
-      <ul>
-        <li>Free Wi-Fi</li>
-        <li>Breakfast</li>
-        <li>Pool Access</li>
-      </ul>
-      <button>boking Room</button>
+    <div class="room-card" style="background-image:url('https://plus.unsplash.com/premium_photo-1687996116408-c53f35e67c16?w=900&h=600&auto=format&fit=crop&q=80');">
+      <div class="room-info">
+        <h3>Single Room</h3>
+        <p class="price">Rs. 5,000 / night</p>
+        <button onclick="selectRoom('Single Room')">Select Room</button>
+      </div>
     </div>
-    <div class="room">
-      <h3>Standard Room</h3>
-      <p>Price: $80 per night</p>
-      <ul>
-        <li>Free Wi-Fi</li>
-        <li>Breakfast</li>
-      </ul>
-      <button>booking Room</button>
+
+    <div class="room-card" style="background-image:url('https://plus.unsplash.com/premium_photo-1683880731008-84ef62e6e77f?w=900&h=600&auto=format&fit=crop&q=80');">
+      <div class="room-info">
+        <h3>Double Room</h3>
+        <p class="price">Rs. 7,500 / night</p>
+        <button onclick="selectRoom('Double Room')">Select Room</button>
+      </div>
+    </div>
+
+    <div class="room-card" style="background-image:url('https://plus.unsplash.com/premium_photo-1661876111607-92f5a6a2849d?w=900&h=600&auto=format&fit=crop&q=80');">
+      <div class="room-info">
+        <h3>Deluxe Room</h3>
+        <p class="price">Rs. 9,500 / night</p>
+        <button onclick="selectRoom('Deluxe Room')">Select Room</button>
+      </div>
+    </div>
+
+    <div class="room-card" style="background-image:url('https://plus.unsplash.com/premium_photo-1675616287235-f52a4c7a1d6a?w=900&h=600&auto=format&fit=crop&q=80');">
+      <div class="room-info">
+        <h3>Family Suite</h3>
+        <p class="price">Rs. 12,000 / night</p>
+        <button onclick="selectRoom('Family Suite')">Select Room</button>
+      </div>
+    </div>
+
+    <div class="room-card" style="background-image:url('https://plus.unsplash.com/premium_photo-1675616228691-2205b80b037f?w=900&h=600&auto=format&fit=crop&q=80');">
+      <div class="room-info">
+        <h3>Presidential Suite</h3>
+        <p class="price">Rs. 20,000 / night</p>
+        <button onclick="selectRoom('Presidential Suite')">Select Room</button>
+      </div>
     </div>
   </section>
 
+  <section class="contact">
+    <h2>Contact & Booking Form</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required placeholder="example@email.com">
+      </div>
+      <div class="form-group">
+        <label for="selectedRoom">Room Category:</label>
+        <input type="text" id="selectedRoom" readonly placeholder="Select a room from above">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" rows="3" placeholder="Your message or booking details..."></textarea>
+      </div>
+      <button class="submit" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 BlueSky Guest House — All rights reserved.
+  </footer>
+
+  <script>
+    function selectRoom(roomName) {
+      const input = document.getElementById('selectedRoom');
+      input.value = roomName;
+      document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById('bookingForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        room: document.getElementById('selectedRoom').value,
+        message: document.getElementById('message').value
+      };
+      alert('Booking submitted successfully!\n\n' + JSON.stringify(data, null, 2));
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>

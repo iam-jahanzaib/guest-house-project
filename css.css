@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f5;
+  color: #4d2121;
+}
+
+header {
+  color: rgb(14, 12, 12);
+  text-align: 0;
+  padding: 0;
+}
+
+.rooms {
+  padding: 2rem;
+  color: #e9e8f1;
+  background: rgb(234, 136, 227);
+} 
+
+.room {
+  border: 1px solid #28bf3e;
+  padding: 1rem;    
+  margin-bottom: 1rem;
+  background: #cdefe5;
+   background-image: url('back2.jpg');
+
+}s
+
+.room h3 {
+  margin-top: 0;
+}
+
+button {
+  background: #fb0303;
+  color: rgba(16, 15, 15, 0.922);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.contact {
+  padding: 2rem;
+  background: #25acc7;
+   background-image: url('back.jpg');
+}
+
+.contact form {
+  background-color: #f6f7f8;
+  color: #f0ee79;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}s
+
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #cef98e;
+  width: 100%;
+}
+form{
+  background-color: #a5f495;
+  color: rgb(134, 240, 112);
+}
+
+footer {
+  background: #06f1ca;
+  color: rgb(19, 6, 6);
+  text-align: center;
+  padding: 1rem;
+}
+
+.h1{
+  background-color: coral;
+  color: #1a1919;
+}
+.h2{
+  background-color: #1a1919;
+  color: #fb0303;
+}
+body {
+  background-image: url('j.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.h2{
+  background-color: #1a1919;
+  color: deeppink;
+}
+.p{
+  background-color: #1a1919;
+  color: darkorchid;
+}
+.ul{
+background-color: #1a1919;
+color: #f50505;
+}

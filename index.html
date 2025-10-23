@@ -35,7 +35,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Breakfast</li>
         <li>Pool Access</li>
       </ul>
-<button onclick="location.href='#booking-form'">booking Room</button>
+<button onclick="location.href='#contact'">booking Room</button>
     </div>
     <div class="room">
       <h3>Standard Room</h3>
@@ -44,7 +44,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Free Wi-Fi</li>
         <li>Breakfast</li>
       </ul>
-<button onclick="location.href='#booking-form'">booking Room</button>
+<button onclick="location.href='#contact'">booking Room</button>
     </div>
      <div class="room">
       <h3>Low standard room</h3>
@@ -54,7 +54,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Breakfast</li>
         <li>Pool Access</li>
       </ul>
-<button onclick="location.href='#booking-form'">booking Room</button>
+<button onclick="location.href='#contact'">booking Room</button>
     </div>
      <div class="room">
       <h3>Deluxe Room</h3>
@@ -69,7 +69,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>24h Electriccity</li>
         <li>Pool Access</li>
       </ul>
-<button onclick="location.href='#booking-form'">booking Room</button>
+<button onclick="location.href='#contact'">booking Room</button>
 
     </div>
     <div class="room">
@@ -82,8 +82,7 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Denar</li>
         <li>Tea</li>
       </ul>
-<button onclick="location.href='#booking-form'">booking Room</button>
-
+<button onclick="location.href='#contact'">booking Room</button>
     </div>
      <div class="room">
       <h3>Low standard room</h3>
@@ -95,33 +94,33 @@ Welcome to our guest house — your home away from home. We offer a range of roo
         <li>Denaer</li>
         <li>Pool Access</li>
       </ul>
-<button onclick="location.href='#booking-form'">booking Room</button>
+<button onclick="location.href='#contact'">booking Room</button>
     </div>
 <section id="contact">
   <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
+  <form action="https://formsubmit.co/jahanzaibkhanhyd@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
 
-    <select id="room-category" required>
-      <option value="">Select Room</option>
-      <option value="Deluxe Room">Deluxe Room</option>
-      <option value="Standard Room">Standard Room</option>
-      <option value="Low Standard Room">Low Standard Room</option>
-    </select>
+  <select name="room" required>
+    <option value="">Select Room</option>
+    <option value="Deluxe Room">Deluxe Room</option>
+    <option value="Standard Room">Standard Room</option>
+    <option value="Low Standard Room">Low Standard Room</option>
+  </select>
 
-    <select id="booking-type" required>
-      <option value="">Select Booking Type</option>
-      <option value="Night">Night</option>
-      <option value="Week">Week</option>
-    </select>
+  <select name="bookingType" required>
+    <option value="">Select Booking Type</option>
+    <option value="Daily">Daily</option>
+    <option value="Weekly">Weekly</option>
+  </select>
 
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Booking</button>
-  </form>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+
 </section>
-
-
 <section id="location">
   <h2 class="h2">guest house Location  Hyderabad</h2>
   <iframe

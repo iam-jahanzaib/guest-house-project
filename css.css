@@ -19,11 +19,11 @@ header {
 } 
 
 .room {
-  border: 1px solid #28bf3e;
+  border: 1px solid black;
   padding: 1rem;    
   margin-bottom: 1rem;
-  background: #cdefe5;
-   background-image: url('back2.jpg');
+ 
+  
 
 }s
 
@@ -32,7 +32,7 @@ header {
 }
 
 button {
-  background: #fb0303;
+  background: #fc04a1;
   color: rgba(16, 15, 15, 0.922);
   border: none;
   padding: 0.5rem 1rem;
@@ -46,7 +46,6 @@ button:hover {
 .contact {
   padding: 2rem;
   background: #25acc7;
-   background-image: url('back.jpg');
 }
 
 .contact form {
@@ -64,12 +63,11 @@ button:hover {
   width: 100%;
 }
 form{
-  background-color: #819cc6;
   color: rgb(94, 173, 185);
 }
 
 footer {
-  background: #06f1ca;
+ 
   color: rgb(19, 6, 6);
   text-align: center;
   padding: 1rem;
@@ -80,25 +78,21 @@ footer {
   color: #1a1919;
 }
 .h2{
-  background-color: #1a1919;
   color: #fb0303;
 }
 body {
-  background-image: url('back3.png');
+  background-image: url('guset\ bord.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 .h2{
-  background-color: #1a1919;
   color: deeppink;
 }
 .p{
-  background-color: #1a1919;
-  color: darkorchid;
+  color:black;
 }
 .ul{
-background-color: #1a1919;
 color: #f50505;
 }

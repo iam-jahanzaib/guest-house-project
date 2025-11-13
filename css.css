@@ -7,27 +7,34 @@ body {
 }
 
 header {
-  color: rgb(14, 12, 12);
+      color:blue;
+      text-align: center;
+      padding: 30px 10px;
+      box-sizing: content-box;
   text-align: 0;
   padding: 0;
 }
 
 .rooms {
   padding: 2rem;
+  margin: left ;
+  text-align:left;
   color: #e9e8f1;
   background: rgb(234, 136, 227);
-} 
+}
 
 .room {
   border: 1px solid black;
-  padding: 1rem;    
-  margin-bottom: 1rem;
- 
-  
+  padding: 1rem;
+  text-align: left;
+  margin: left;
 
-}s
 
-.room h3 {
+
+}
+
+s .room h3 {
+  text-align: left;
   margin-top: 0;
 }
 
@@ -54,45 +61,50 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}s
+}
 
-.contact input,
+s .contact input,
 .contact textarea {
   padding: 0.5rem;
   border: 1px solid #cef98e;
   width: 100%;
+  height: 100%;
 }
-form{
+
+form {
   color: rgb(94, 173, 185);
 }
 
 footer {
- 
+
   color: rgb(19, 6, 6);
   text-align: center;
   padding: 1rem;
 }
 
-.h1{
+.h1 {
   background-color: coral;
   color: #1a1919;
 }
-.h2{
+
+.h2 {
   color: #fb0303;
 }
+
 body {
-  background-image: url('guset\ bord.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-image:url(back3.png);
 }
-.h2{
-  color: deeppink;
-}
-.p{
+
+.h2 {
   color:black;
 }
-.ul{
-color: #f50505;
+
+.p {
+  color: black;
+}
+
+.ul {
+  color:black;
+  margin: auto;
+  text-align: left;
 }

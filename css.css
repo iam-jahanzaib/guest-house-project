@@ -39,7 +39,7 @@ s .room h3 {
 }
 
 button {
-  background: #fc04a1;
+  background:aqua;
   color: rgba(16, 15, 15, 0.922);
   border: none;
   padding: 0.5rem 1rem;
@@ -92,7 +92,7 @@ footer {
 }
 
 body {
-  background-image:url(back3.png);
+  background-color: gold;
 }
 
 .h2 {
